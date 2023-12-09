@@ -6,20 +6,19 @@
     <title>Adivina el número</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="body">
     <header>
-        <h1>Adivina el número</h1>
+        <h1 class="title">Adivina el número</h1>
     </header>
     <main>
-        <form id="NumberForm">
+        <form class="form" id="NumberForm">
             <label for="NumberInput">Introduce aquí tu número:</label>
-            <input class="js__userNumberInput" type="number" id="NumberInput" name="NumberInput" required>
-            <button class="js__userNumberBtn" type="submit">Prueba</button>
+            <input class=" input js__userNumberInput" type="number" id="NumberInput" name="NumberInput" required>
+            <button class=" button js__userNumberBtn" type="submit">Prueba</button>
         </form>
-        <div class="js__resultPhrase">
-            Escribe el número y dale a Prueba
+        <div class=" result js__resultPhrase">
         </div>
-        <div class ="js__resultAttempts">
+        <div class =" attempts js__resultAttempts">
             Número de intentos: 0
         </div>
     </main>
