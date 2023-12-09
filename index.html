@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Adivina el número</h1>
+    </header>
+    <main>
+        <form id="NumberForm">
+            <label for="NumberInput">Introduce aquí tu número:</label>
+            <input class="js__userNumberInput" type="number" id="NumberInput" name="NumberInput" required>
+            <button class="js__userNumberBtn" type="submit">Prueba</button>
+        </form>
+        <div class="js__resultPhrase">
+            Escribe el número y dale a Prueba
+        </div>
+        <div class ="js__resultAttempts">
+            Número de intentos: 0
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
