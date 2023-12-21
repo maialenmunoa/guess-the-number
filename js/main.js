@@ -41,6 +41,7 @@ function compareNumbers() {
     const userNumber = getUserNumber();
     if (userNumber === randomNumber) {
         displayResult('Has ganado, ¡campeona!');
+        userNumberBtn.disabled = true;
     } else if (userNumber < 1 || userNumber > 100) {
         displayResult('El número debe estar entre 1 y 100');
     } else if (userNumber > randomNumber) {
@@ -58,7 +59,7 @@ function handleClickButton(event) {
 
 function handleGameOver() {
     resultPhrase.innerHTML = '¡El juego ha terminado!';
-    userNumberInput.value = '';
+    emptyInput()
     attempts = 0;
     userNumberBtn.disabled = true;
 }
@@ -69,8 +70,12 @@ function resetGame() {
     displayResult(initialMessage);
     resultAttempts.innerHTML = `Número de intentos: ${attempts}`;
     userNumberBtn.disabled = false;
+    emptyInput()
 }
 
+function emptyInput() {
+    userNumberInput.value = '';
+}
 
 //EVENT
 
