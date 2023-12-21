@@ -58,7 +58,7 @@ function handleClickButton(event) {
 }
 
 function handleGameOver() {
-    resultPhrase.innerHTML = '¡El juego ha terminado!';
+    resultPhrase.innerHTML = `¡El juego ha terminado! Era el ${randomNumber}.`;
     emptyInput()
     attempts = 0;
     userNumberBtn.disabled = true;
