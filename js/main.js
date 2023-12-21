@@ -6,6 +6,7 @@ const userNumberInput = document.querySelector('.js__userNumberInput');
 const userNumberBtn = document.querySelector('.js__userNumberBtn');
 const resultPhrase = document.querySelector('.js__resultPhrase');
 const resultAttempts = document.querySelector('.js__resultAttempts');
+const resetBtn = document.querySelector('.js__resetBtn');
 
 // VARIABLES de DATOS
 
@@ -51,11 +52,19 @@ function handleClickButton(event) {
     displayAttempts();
 }
 
+function resetGame() {
+    attempts = 0;
+    randomNumber = getRandomNumber(100);
+    displayResult(initialMessage);
+    resultAttempts.textContent = `Número de intentos: ${attempts}`;
+}
+
 
 //EVENT
 
 userNumberBtn.addEventListener('click', handleClickButton);
 
+resetBtn.addEventListener('click', resetGame);
 
 //CÓDIGO AL CARGAR LA PÁGINA
 

@@ -57,3 +57,19 @@
 .attempts {
     text-align: center;
 }
+
+.reset {
+    width: 80px;
+    height: 30px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(215, 220, 222);
+    cursor: pointer;
+}
+
+.reset_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
