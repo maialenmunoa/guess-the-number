@@ -67,7 +67,7 @@ function resetGame() {
     attempts = 0;
     randomNumber = getRandomNumber(100);
     displayResult(initialMessage);
-    resultAttempts.textContent = `Número de intentos: ${attempts}`;
+    resultAttempts.innerHTML = `Número de intentos: ${attempts}`;
     userNumberBtn.disabled = false;
 }
 
