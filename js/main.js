@@ -13,6 +13,7 @@ const resetBtn = document.querySelector('.js__resetBtn');
 const initialMessage = 'Escribe un número y dale a Prueba';
 let randomNumber = getRandomNumber(100); 
 let attempts = 0;
+const attemptLimit = 10;
 
 //FUNCTIONS
 
@@ -30,7 +31,10 @@ function displayResult(message) {
 
 function displayAttempts() {
     attempts++;
-    resultAttempts.textContent = `Número de intentos: ${attempts}`;
+    resultAttempts.innerHTML = `Número de intentos: ${attempts}`;
+    if (attempts >= attemptLimit) {
+        handleGameOver();
+    } 
 }
 
 function compareNumbers() {
@@ -52,11 +56,19 @@ function handleClickButton(event) {
     displayAttempts();
 }
 
+function handleGameOver() {
+    resultPhrase.innerHTML = '¡El juego ha terminado!';
+    userNumberInput.value = '';
+    attempts = 0;
+    userNumberBtn.disabled = true;
+}
+
 function resetGame() {
     attempts = 0;
     randomNumber = getRandomNumber(100);
     displayResult(initialMessage);
     resultAttempts.textContent = `Número de intentos: ${attempts}`;
+    userNumberBtn.disabled = false;
 }
 
 
