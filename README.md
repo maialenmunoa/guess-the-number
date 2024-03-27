@@ -1,27 +1,37 @@
-# Ejercicio de Evaluación intermedia 💜 Módulo 2
+# Juego Adivina el número 🎲
 
-En este ejercicio pongo en práctica los conocimientos adquiridos en la primera parte del Módulo 2 del Bootcamp de Programación Web    de Adalab. En este ejercicio he realizado el juego Adivina el Número con JavaScript. Para ello he realizado un diseño sencillo de html y le he añadido algunos estilos en CSS. 
-Para la parte de JavaScript, he trabajado con querySelector, variables de datos, funciones, condicionales if/else if y eventos. 
+Este proyecto implementa un juego de adivinanzas de números, donde la usuaria intenta adivinar un número aleatorio entre 1 y 100 en un límite de intentos. En la implementación JavaScript, se utiliza el DOM para interactuar con el usuario, gestionar el estado del juego y proporcionar retroalimentación dinámica en función de las elecciones de la usuaria.
 
-Tecnologías que utilizo en el ejercicio:
+### Tecnologías utilizadas 🛠️
 
 - JavaScript
 - HTML
 - CSS
 
+### Instrucciones de uso 📖
+
+1. Ingresa un número entre 1 y 100 en el input.
+2. Haz clic en el botón "Prueba" para verificar tu elección.
+3. Recibirás indicaciones si tu número es demasiado alto, demasiado bajo o si has adivinado correctamente.
+4. Observa el número de intentos realizados.
+
+### Cómo jugar 🕹️
+
+- Intenta adivinar el número correcto en la menor cantidad de intentos posible.
+- Puedes realizar hasta 10 intentos antes de que el juego termine.
+
+### Funcionalidades implementadas 🚀
+
+- **Generación aleatoria de números**: JavaScript para generar un número aleatorio entre 1 y 100.
+- **Comparación de números**: Compara el número ingresado por la usuaria con el número aleatorio y proporciona indicaciones.
+- **Seguimiento de intentos**: Muestra el número de intentos realizados durante el juego.
+- **Reinicio del juego**: Permite reiniciar el juego para realizar una nueva adivinanza.
+
 ### Link Github Pages 🌐
 
 https://beta.adalab.es/modulo-2-evaluacion-intermedia-maialenmunoa/
 
-## Guía de inicio rápido 🔍
-
-Con estas instrucciones podrás tener una copia del ejercicio y ejecutarlo.
-
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/)
-
-### Pasos para ejecutar el ejercicio ▶️
-
-Ejecuta estos comandos en la terminal
+## Instrucciones de ejecución 🔍
 
 1. **Clona el repositorio**:
 
@@ -29,20 +39,7 @@ Ejecuta estos comandos en la terminal
  git clone https://github.com/Adalab/modulo-2-evaluacion-intermedia-maialenmunoa.git
 ```
 
-2. Instala las **dependencias locales**:
-
-```bash
-npm install
-```
-
-3. **Arranca el proyecto**:
-
-```bash
-npm run dev
-```
-
-Este comando:
-**Abre una ventana en el navegador y muestra la página web**
+2. Abre el archivo **index.html** en tu navegador.
 
 ## Autoría 👩‍💻
 
